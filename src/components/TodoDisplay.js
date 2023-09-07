@@ -6,7 +6,7 @@ const TodoDisplay = ({ List, deleteTask }) => {
     <div className='todoItems'>
       {
         List.map((todo) => {
-          return (   // yha pr usecontext ka use krke dekhna h
+          return (  
             <Todo todo={todo} deleteTask={deleteTask} />
           )
         })
