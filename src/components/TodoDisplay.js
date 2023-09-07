@@ -1,12 +1,16 @@
 import React from 'react'
-import { useState } from 'react';
-const TodoDisplay = () => {
-    const [input,setInput] = useState({});
-    const [Item, setItem] = useState([]);
+import Todo from './Todo'
+const TodoDisplay = ({ List, deleteTask }) => {
 
   return (
-    <div >
-      
+    <div className='todoItems'>
+      {
+        List.map((todo) => {
+          return (   // yha pr usecontext ka use krke dekhna h
+            <Todo todo={todo} deleteTask={deleteTask} />
+          )
+        })
+      }
     </div>
   )
 }

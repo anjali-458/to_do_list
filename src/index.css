@@ -25,12 +25,16 @@ code {
   padding: 2%;
   color: rgb(10, 75, 75) ;
 }
-.row{
+.row, .todo{
   background: rgb(234, 241, 241);
   margin: 5% 10% 5% 10%;
   border-radius: 5px;
   width: 80%;
   box-shadow: 2px 2px 2px gray;
+}
+.todo{
+  padding: 5px 5px 5px 8px;
+  font-size: larger;
 }
 .todo_input{
   justify-content: space-between;
